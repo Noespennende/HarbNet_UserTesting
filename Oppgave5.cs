@@ -38,6 +38,9 @@ namespace Harbnet_brukertesting
             //Skriv ut informasjonen om alle kontainere til consoll:
 
 
+            simulering.PrintContainerHistory();
+           
+
         }
     }
 }

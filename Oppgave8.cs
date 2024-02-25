@@ -29,7 +29,7 @@ namespace Harbnet_brukertesting
 
            Harbor kjuttaviga = new Harbor(shipList, 4, 4, 4, 4, 4, 4, 4, 4, 4);
 
-           Simulation simulering = new Simulation(kjuttaviga, DateTime.Now, DateTime.Now.AddDays(7));
+           Simulation simulering = new Simulation(kjutstaviga, DateTime.Now, DateTime.Now.AddDays(7));
 
             simulering.Run();
 

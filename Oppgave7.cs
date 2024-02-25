@@ -37,6 +37,10 @@ namespace Harbnet_brukertesting
 
 
             //Skriv ut historien til skipet Den sorte dame til konsoll:
+            
+            
+
+          
 
         }
     }

@@ -26,7 +26,8 @@ namespace Harbnet_brukertesting
 
             // Kjør en simulering på havnen og skipene gitt ovenfor fra dagens dato og 2 uker frem i tid. 
 
-
+            HarbFramework.Simulation minSimulasjon = new Simulation(kjuttaviga, DateTime.Now, DateTime.Now.Date.AddDays(14));
+            minSimulasjon.Run();
         }
     }
 }
