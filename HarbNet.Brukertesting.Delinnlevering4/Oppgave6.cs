@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HarbFramework;
-using harbNet;
+using Gruppe8.HarbNet;
 
-namespace Harbnet_brukertesting
+namespace HarbNet.Brukertesting
 {
-    internal class Oppgave7
+    internal class Oppgave6
     {
         static void Main(string[] args)
         {

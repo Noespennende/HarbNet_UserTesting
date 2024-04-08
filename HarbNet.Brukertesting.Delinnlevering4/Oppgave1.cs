@@ -1,14 +1,13 @@
-﻿using System;
+﻿using Gruppe8.HarbNet;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HarbFramework;
-using harbNet;
 
-namespace Harbnet_brukertesting
+namespace HarbNet.Brukertesting
 {
-    internal class Oppgave2
+    internal class Oppgave1
     {
         static void Main(string[] args)
         {
@@ -16,7 +15,8 @@ namespace Harbnet_brukertesting
 
             List<Ship> ships = new List<Ship>();
 
-            harbNet.Ship tatanic = new Ship("tatinac", ShipSize.Large, DateTime.Now, true, 4, 30);
+            
+            Ship tatanic = new Ship("tatinac", ShipSize.Large, DateTime.Now, true, 4, 30);
             ships.Add(tatanic);
 
 

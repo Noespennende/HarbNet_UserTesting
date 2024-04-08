@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harbnet.Brukertesting.Delinnlevering2", "Harbnet.Brukertesting.Delinnlevering2.csproj", "{E667E3D4-1C07-464F-806A-5F28A30C3E74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Harbnet.Brukertesting.Delinnlevering2", "Harbnet.Brukertesting.Delinnlevering2\Harbnet.Brukertesting.Delinnlevering2.csproj", "{E667E3D4-1C07-464F-806A-5F28A30C3E74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarbNet.Brukertesting.Delinnlevering4", "..\HarbNet.Brukertesting.Delinnlevering4\HarbNet.Brukertesting.Delinnlevering4.csproj", "{2CB67483-978D-47A9-B65A-E8C2CBBACAC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarbNet.Brukertesting.Delinnlevering4", "HarbNet.Brukertesting.Delinnlevering4\HarbNet.Brukertesting.Delinnlevering4.csproj", "{2CB67483-978D-47A9-B65A-E8C2CBBACAC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
