@@ -11,22 +11,43 @@ namespace HarbNet.Brukertesting
     {
         static void Main(string[] args)
         {
-           Ship denSorteDame = new Ship ("Den Sorte Dame", ShipSize.Medium, DateTime.Now, false, 5, 20);
-           Ship titanic = new Ship("Titanic", ShipSize.Large, DateTime.Now, true, 10, 30);
-           Ship bebop = new Ship("Bebop", ShipSize.Small, DateTime.Now, false, 4, 10);
+            /* 
+             * ** Havn-detaljer **
+             * 6 Loading docks - 2 små, 3 medium, 1 stor
+             * 3 Ship docks - 2 medium, 1 stor
+             * 4 Loading dock kraner
+             * 2 Lagringsplass kraner
+             * 30 ADV-er
+             * - En kran tar 20 lastinger per time
+             * - En ADV tar 15 lastinger per time
+             * 10 Trucker kommer til havnen hver time
+             * 10% av containerne lastes dirkete på trucker fra skip
+             * 20% av containerne lastes på trucker fra lagringsplass
+             */
 
-           IList<Ship> shipList = new List<Ship>();
+            /* ** OPPGAVE 3 ** */
 
-           shipList.Add( denSorteDame );
-           shipList.Add( titanic );    
-           shipList.Add( bebop );
+            // Lag en havn med de spesifiserte detaljene ovenfor.
+            // Du kan ta i bruk eksisterende lister og objekter nedenfor.
 
-           Harbor kjuttaviga = new Harbor(shipList, 4, 4, 4, 4, 4, 4, 4, 4, 4);
+            List<ContainerStorageRow> storageArea = [];
+            List<Ship> ships = new();
 
-            // Kjør en simulering på havnen og skipene gitt ovenfor fra dagens dato og 2 uker frem i tid. 
+            for (int i = 0; i < 15; i++)
+            {
+                storageArea.Add(new ContainerStorageRow(10));
+            }
 
-            HarbFramework.Simulation minSimulasjon = new Simulation(kjuttaviga, DateTime.Now, DateTime.Now.Date.AddDays(14));
-            minSimulasjon.Run();
+            Ship titanic = new("Titanic", ShipSize.Large, DateTime.Now, true, 7, 30, 70);
+            Ship mcBoatFace = new("Boaty McBoatFace", ShipSize.Medium, DateTime.Now, false, 5, 10, 40);
+            Ship denSorteDame = new("Den sorte dame", ShipSize.Small, DateTime.Now, true, 5, 0, 20);
+
+            ships.AddRange(new List<Ship> {titanic, mcBoatFace, denSorteDame});
+
+            /* !! Svar på oppgaven under her !! */
+
+            
+
         }
     }
 }

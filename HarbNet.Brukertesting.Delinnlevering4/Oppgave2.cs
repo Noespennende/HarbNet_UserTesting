@@ -11,21 +11,13 @@ namespace HarbNet.Brukertesting
     {
         static void Main(string[] args)
         {
-            Ship denSorteDame = new Ship ("Den Sorte Dame", ShipSize.Medium, DateTime.Now, false, 5, 20);
+            /* ** OPPGAVE 2 ** */
 
-            Ship titanic = new Ship("Titanic", ShipSize.Large, DateTime.Now, true, 10, 30);
+            // Du skal lage lagringsplassen til en havn.
+            // Lag 15 container rader med plass til 10 containere per rad.
 
-            Ship bebop = new Ship("Bebop", ShipSize.Small, DateTime.Now, false, 4, 10);
+            /* !! Svar på oppgaven under her !! */
 
-            // Lag en havn som inneholder skipene gitt ovenfor:
-            List<Ship> ships = new List<Ship>();
-            ships.Add(bebop);
-            ships.Add(titanic);
-            ships.Add(denSorteDame);
-
-
-            Harbor minHavn = new Harbor(ships, 1, 1, 1, 1, 1, 1, 10, 20, 30);
-           
         }
     }
 }

@@ -11,24 +11,15 @@ namespace HarbNet.Brukertesting
     {
         static void Main(string[] args)
         {
-            // Opprett ett stort skip med navn "Titanic" for enkeltseilas, med 30 kontainere ombord.
+            /* ** OPPGAVE 1 ** */
 
-            List<Ship> ships = new List<Ship>();
+            // Opprett ett stort skip med navn "Titanic", med 30 halv-containere og 70 full-size containere.
+            // Skipet bruker 7 dager på en tur.
 
-            
-            Ship tatanic = new Ship("tatinac", ShipSize.Large, DateTime.Now, true, 4, 30);
-            ships.Add(tatanic);
-
-
-                
-
-            // Opprett ett lite skip med navn "Bebop" for en 6 dagers tur retur seilas, med 10 kontainere ombord.
+            /* !! Svar på oppgaven under her !! */
 
 
 
-            // Opprett ett medium skip med navn "Den sorte dame" for 10 dagers tur retur seilas, med 20 kontainere.
-
-            
         }
     }
 }

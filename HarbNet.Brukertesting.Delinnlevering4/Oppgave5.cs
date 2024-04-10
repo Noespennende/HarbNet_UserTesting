@@ -11,31 +11,48 @@ namespace HarbNet.Brukertesting
     {
         static void Main(string[] args)
         {
-           Ship denSorteDame = new Ship ("Den Sorte Dame", ShipSize.Medium, DateTime.Now, false, 5, 20);
+            /* ** OPPGAVE 5 ** */
 
-           Ship titanic = new Ship("Titanic", ShipSize.Large, DateTime.Now, true, 10, 30);
+            /* Abonner på eventer for følgende hendelser:
+             * 1. Når et skip ankrer
+             * 2. Når et skip laster av en container
+             * 3. Når en truck laster på en container fra lagringsplass
+             * 4. Når en time har passert
+             * 5. Når en dag er passert og logget i simuleringens historie
+             * 
+             * Du kan ta i bruk HandleEvent ved abonnering. ( += HandleEvent; )
+             * 
+             * Syntaks er ikke viktig.
+             * 
+            */
 
-           Ship bebop = new Ship("Bebop", ShipSize.Small, DateTime.Now, false, 4, 10);
+            static void HandleEvent(object? sender, EventArgs e)
+            { }
 
-           IList<Ship> shipList = new List<Ship>();
+            List<ContainerStorageRow> storageArea = [];
+            List<Ship> ships = new();
 
-           shipList.Add( denSorteDame );
-           shipList.Add( titanic );    
-           shipList.Add( bebop );
+            for (int i = 0; i < 15; i++)
+            {
+                storageArea.Add(new ContainerStorageRow(10));
+            }
 
-           Harbor kjuttaviga = new Harbor(shipList, 4, 4, 4, 4, 4, 4, 4, 4, 4);
+            Ship titanic = new("Titanic", ShipSize.Large, DateTime.Now, true, 7, 30, 70);
+            Ship mcBoatFace = new("Boaty McBoatFace", ShipSize.Medium, DateTime.Now, false, 5, 10, 40);
+            Ship denSorteDame = new("Den sorte dame", ShipSize.Small, DateTime.Now, true, 5, 0, 20);
 
-           Simulation simulering = new Simulation(kjuttaviga, DateTime.Now, DateTime.Now.AddDays(7));
+            ships.AddRange(new List<Ship> { titanic, mcBoatFace, denSorteDame });
 
-            simulering.Run();
+            Harbor kjuttavika = new(ships, storageArea, 2, 3, 1, 4, 20, 2, 0, 2, 1, 10, 10, 20, 30, 15);
 
-            System.Console.WriteLine("------------------------------------------------------");
-            System.Console.WriteLine("------------------------------------------------------");
-            System.Console.WriteLine("------------------------------------------------------");
-            System.Console.WriteLine("----------OPPGAVEN STARTER HER------------");
+            DateTime startTime = new(2024, 4, 10, 0, 0, 0);
+            DateTime endTime = new(2024, 5, 10, 0, 0, 0);
+
+            Simulation simulasjon = new(kjuttavika, startTime, endTime);
 
 
-            //Skriv ut informasjonen om alle skip til consoll:
+            /* !! Svar på oppgaven under her !! */
+
 
 
         }

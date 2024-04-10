@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Gruppe8.HarbNet" Version="1.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="HarbFramework">
       <HintPath>bin\HarbnetFramework\HarbFramework.dll</HintPath>
     </Reference>

@@ -11,34 +11,30 @@ namespace HarbNet.Brukertesting
     {
         static void Main(string[] args)
         {
-           Ship denSorteDame = new Ship ("Den Sorte Dame", ShipSize.Medium, DateTime.Now, false, 5, 20);
 
-           Ship titanic = new Ship("Titanic", ShipSize.Large, DateTime.Now, true, 10, 30);
+            /* ** OPPGAVE 4 ** */
 
-           Ship bebop = new Ship("Bebop", ShipSize.Small, DateTime.Now, false, 4, 10);
+            // Opprett en simulasjon, med startdato 10.04.2024 kl 00:00, og sluttdato 10.05.2024 kl 00:00.
+            // Simuleringen skal simulere det gitte havn-objektet.
 
-           IList<Ship> shipList = new List<Ship>();
+            List<ContainerStorageRow> storageArea = [];
+            List<Ship> ships = new();
 
-           shipList.Add( denSorteDame );
-           shipList.Add( titanic );    
-           shipList.Add( bebop );
+            for (int i = 0; i < 15; i++)
+            {
+                storageArea.Add(new ContainerStorageRow(10));
+            }
 
-           Harbor kjuttaviga = new Harbor(shipList, 4, 4, 4, 4, 4, 4, 4, 4, 4);
+            Ship titanic = new("Titanic", ShipSize.Large, DateTime.Now, true, 7, 30, 70);
+            Ship mcBoatFace = new("Boaty McBoatFace", ShipSize.Medium, DateTime.Now, false, 5, 10, 40);
+            Ship denSorteDame = new("Den sorte dame", ShipSize.Small, DateTime.Now, true, 5, 0, 20);
 
-           Simulation simulering = new Simulation(kjuttaviga, DateTime.Now, DateTime.Now.AddDays(7));
+            ships.AddRange(new List<Ship> { titanic, mcBoatFace, denSorteDame });
 
-            simulering.Run();
+            Harbor kjuttavika = new(ships, storageArea, 2, 3, 1, 4, 20, 2, 0, 2, 1, 10, 10, 20, 30, 15);
 
-            System.Console.WriteLine("------------------------------------------------------");
-            System.Console.WriteLine("------------------------------------------------------");
-            System.Console.WriteLine("------------------------------------------------------");
-            System.Console.WriteLine("----------OPPGAVEN STARTER HER------------");
+            /* !! Svar på oppgaven under her !! */
 
-            //Skriv ut informasjonen om alle kontainere til consoll:
-
-
-            simulering.PrintContainerHistory();
-           
 
         }
     }
