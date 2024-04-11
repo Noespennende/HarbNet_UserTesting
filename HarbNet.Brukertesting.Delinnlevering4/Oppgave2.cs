@@ -18,6 +18,9 @@ namespace HarbNet.Brukertesting
 
             /* !! Svar på oppgaven under her !! */
 
+            Gruppe8.HarbNet.ContainerStorageRow containerStorageRow = new ContainerStorageRow(10);
+
+
         }
     }
 }

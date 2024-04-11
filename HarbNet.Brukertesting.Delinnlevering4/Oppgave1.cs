@@ -1,7 +1,7 @@
 ﻿using Gruppe8.HarbNet;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using Systemo.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,6 +17,10 @@ namespace HarbNet.Brukertesting
             // Skipet bruker 7 dager på en tur.
 
             /* !! Svar på oppgaven under her !! */
+
+            Gruppe8.HarbNet.Ship ship = new Ship("Titanic",,new DateTime(2024,12,10), true, 7, 30, 70);
+
+
 
 
 

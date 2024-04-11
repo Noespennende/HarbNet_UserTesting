@@ -54,7 +54,6 @@ namespace HarbNet.Brukertesting
             /* !! Svar på oppgaven under her !! */
 
 
-
         }
     }
 }

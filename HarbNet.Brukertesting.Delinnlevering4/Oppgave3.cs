@@ -46,7 +46,10 @@ namespace HarbNet.Brukertesting
 
             /* !! Svar på oppgaven under her !! */
 
-            
+            Gruppe8.HarbNet.Harbor harbor = new Harbor(ships, storageArea, 2, 3, 1, 4, 20, 2, 0, 2, 1, 10, 10, 20, 30, 15);
+
+
+
 
         }
     }

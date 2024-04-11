@@ -10,5 +10,4 @@
   <ItemGroup>
     <PackageReference Include="Gruppe8.HarbNet" Version="1.1.0" />
   </ItemGroup>
-
 </Project>

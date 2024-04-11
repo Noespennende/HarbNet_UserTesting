@@ -35,6 +35,8 @@ namespace HarbNet.Brukertesting
 
             /* !! Svar på oppgaven under her !! */
 
+            Gruppe8.HarbNet.Simulation simulation = new Simulation(kjuttavika, new DateTime(2024, 04, 10), new DateTime(2024, 05, 10));
+
 
         }
     }
